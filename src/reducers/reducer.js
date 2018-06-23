@@ -1,7 +1,5 @@
 // Initialize a default state
-var defaultState = {
-  toggle_default: true,
-  toggle_home: false,
+const defaultState = {
   toggle_about: false,
   toggle_contact: false,
   toggle_hobbies: false,
@@ -11,14 +9,6 @@ var defaultState = {
 // Initialize a default reducer function, passing into it the default state
 export function rootReducer(state = defaultState, action) {
   switch (action.type) {
-    case 'TOGGLE_DEFAULT':
-      return {...state,
-        toggle_default: !state.toggle_default
-      }
-    case 'TOGGLE_HOME':
-      return {...state,
-        toggle_home: !state.toggle_home
-      }
     case 'TOGGLE_ABOUT':
       return {...state,
         toggle_about: !state.toggle_about

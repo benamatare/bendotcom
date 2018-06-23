@@ -1,44 +1,79 @@
-.learning {
-  text-align: center;
-  background-color: yellow;
+.nav-parent {
+
 }
 
-.nav-parent h1 {
-  border: 5px red solid;
-  color: white;
-  background-color: #232323;
+.nav-child {
+
 }
 
+.nav-child h1 {
 
-.nav-container-parent {
-  background-color: gray;
-  display: flex;
-  flex-direction: row;
-
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  /* align-self: flex-start; */
-}
-.nav-container-child-h {
-  background-color: #232323;
-  padding: 20px;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
-  justify-content: space-between;
 }
 
-.nav-container-child-h h1 {
-  margin: 0.4vh;
-  padding: 2%;
-  border: 5px white solid;
-  color: white;
+/* Default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nav-container-child {
-  align-self: flex-start;
-  background-color: red;
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  /* Container */
+  .nav-parent {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  /* Nav Block */
+  .nav-child {
+    margin: 5%;
+    height: 25%;
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
+  }
+  .nav-child h1 {
+    color: #888888;
+    font-size: 3.2em;
+    text-transform: uppercase;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: yellow;
+  }
+  .nav-parent {
+    background-color: #232323;
+    height: 100vh;
+  }
+  .nav-child {
+    margin: 5% 3.4% 0 3.4%;
+    background-color: green;
+    height: 17.5vh;
+  }
+  .nav-child h1 {
+    font-size: 3.8em;
+  }
+}
+
+/* Desktop Stlyes */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #121212;
+  }
+  .nav-parent {
+    flex-wrap: nowrap;
+  }
+  .nav-child {
+    height: 200px;
+    margin-top: 40vh;
+  }
 }

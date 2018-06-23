@@ -1,10 +1,4 @@
 // Global Actions that impact Reducer initialized
-export function toggleDefault() {
-  return { type: 'TOGGLE_DEFAULT' }
-}
-export function toggleHome() {
-  return { type: 'TOGGLE_HOME' }
-}
 export function toggleAbout() {
   return { type: 'TOGGLE_ABOUT' }
 }

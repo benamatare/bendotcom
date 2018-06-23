@@ -1,66 +1,51 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { toggleDefault, toggleContact, toggleAbout, toggleHobbies, togglePortfolio } from './actions/actions.js';
-
-import './App.css';
-
+import { toggleContact, toggleAbout, toggleHobbies, togglePortfolio } from './actions/actions.js';
 import Contact from './components/contact.js';
 import About from './components/about.js';
 import Hobbies from './components/hobbies.js';
 import Portfolio from './components/portfolio.js';
 
+import './App.css';
 
 class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      query: null,
-    }
-  }
-
-  componentDidMount() {
-    this.props.toggleDefault()
-  }
-toggleRender = e => {
-  console.log(e.target.innerText);
-  this.setState({
-    query: e.target.innerText
-  })
-}
-
-
   render() {
-    console.log(this.props);
+   const RENDER_LOGIC = this.props.about || this.props.contact || this.props.hobbies || this.props.portfolio;
     return (
-      <div className="parent">
-        { !this.props.default ?
-          <span className="nav-parent" onClick={this.props.toggleDefault}>
-            <h1 onClick={this.toggleRender}>ABOUT</h1>
-            <h1>CONTACT</h1>
-            <h1>HOBBIES</h1>
-            <h1>PORTFOLIO</h1>
-          </span>
-        : null }
-        <div>
-          {this.props.default && this.state.query == 'ABOUT' ?
-            <p> asdasd </p>
-            // <div>
-            // <About />
-            // <Contact />
-            // <Hobbies />
-            // <Portfolio />
-            // </div>
-          : null}
-        </div>
-      </div>
+      <div className="nav-parent">
+        {/* Parent Container for all Cards */}
+        {/* If Card is clicked toggle it's redux state change, and render the card */}
+        {/* RENDER_LOGIC states if any card is clicked don't render the Navigation cards, but render that component that is clicked */}
+        { RENDER_LOGIC ? null :
+          <div className="nav-child" onClick={this.props.toggleAbout}>
+             <h1> about </h1>
+          </div> }
+        { this.props.about ? <About /> : null }
 
+        { RENDER_LOGIC ? null :
+          <div className="nav-child" onClick={this.props.toggleContact}>
+            <h1> contact </h1>
+          </div>}
+        { this.props.contact ? <Contact /> : null }
+
+        { RENDER_LOGIC ? null :
+          <div className="nav-child" onClick={this.props.toggleHobbies}>
+            <h1> hobbies </h1>
+          </div>}
+        { this.props.hobbies ? <Hobbies /> : null }
+
+        { RENDER_LOGIC  ? null :
+          <div className="nav-child" onClick={this.props.togglePortfolio}>
+            <h1> portfolio </h1>
+          </div>}
+        { this.props.portfolio ? <Portfolio /> : null }
+      </div>
   )};
 }
 
   const mapDispatchToProps = dispatch => {
     return bindActionCreators({
-      toggleDefault: toggleDefault,
       toggleContact: toggleContact,
       toggleAbout: toggleAbout,
       toggleHobbies: toggleHobbies,
@@ -70,7 +55,6 @@ toggleRender = e => {
 
   const mapStateToProps = state => {
     return {
-      default: state.toggle_default,
       contact: state.toggle_contact,
       about: state.toggle_about,
       hobbies: state.toggle_hobbies,
