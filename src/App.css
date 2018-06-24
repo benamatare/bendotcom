@@ -29,7 +29,7 @@
   }
   /* Nav Block */
   .nav-child {
-    margin: 5%;
+    margin: 4% 5% 4% 5%;
     height: 25%;
     background-color: #232323;
     display: flex;

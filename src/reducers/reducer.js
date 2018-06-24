@@ -2,7 +2,7 @@
 const defaultState = {
   toggle_about: false,
   toggle_contact: false,
-  toggle_hobbies: false,
+  toggle_skills: false,
   toggle_portfolio: false
 };
 
@@ -17,9 +17,9 @@ export function rootReducer(state = defaultState, action) {
       return {...state,
         toggle_contact: !state.toggle_contact
       }
-    case 'TOGGLE_HOBBIES':
+    case 'TOGGLE_SKILLS':
       return {...state,
-        toggle_hobbies: !state.toggle_hobbies
+        toggle_skills: !state.toggle_skills
       }
     case 'TOGGLE_PORTFOLIO':
       return {...state,

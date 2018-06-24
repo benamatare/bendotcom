@@ -1,17 +1,17 @@
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   /* Container */
-  .contact-parent {
+  .skills-parent {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .contact-icon-parent {
+  .skills-child {
     margin: 5% 5% 0 5%;
     height: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -20,42 +20,21 @@
                 0 10px 10px rgba(0,0,0,0.22);
   }
 
-  .icon-child i {
-    font-size: 19.7vh;
+  .skills-child i {
+    font-size: 13.4vh;
     padding: 3%;
-    margin-left: .2%;
-    margin-right: .2%;
+  }
+  img {
+    height: 14.5vh;
+    width: auto;
   }
 
-  .icon-child:nth-child(1) i {
-    /* Email */
-    padding-top: 12.2%;
-    color: #FA0013;
-  }
-  .icon-child:nth-child(2) i {
-    /* Resume */
-    padding-top: 12.2%;
-    color: #3b5998;
-  }
-  .icon-child:nth-child(3) i {
-    /* Medium */
-    color: #000;
-  }
-  .icon-child:nth-child(4) i {
-    /* Twitter */
-    color: #55acee;
-  }
-  .icon-child:nth-child(5) i {
-    /* LinkedIn */
-    color: #0976b4;
-  }
-  .icon-child:nth-child(6) i {
-    /* Github */
-    color: #333;
-  }
+
+
+
 
   /* Button Block */
-    .back {
+  .back {
     margin: 5%;
     height: 23%;
 

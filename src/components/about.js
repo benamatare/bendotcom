@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { toggleAbout } from '../actions/actions.js';
 
 import '../css/about.css';
-import IMG from "./profile.jpg"
+// import IMG from "./profile.jpg"
 const About = props => {
 
   return (
@@ -17,13 +17,13 @@ const About = props => {
       <div className="about-content">
         <ul>
           <li> dota 2 nerd </li>
-          <li> front-end is bae </li>
+          <li> front-end fiend </li>
           <li> i like react </li>
-          <li> i used redux for no reason </li>
+          <li> slovakian & zimbabwean </li>
         </ul>
       </div>
       <button className="back" onClick={props.toggleAbout}>
-        Back
+        back
       </button>
     </div>
 )};

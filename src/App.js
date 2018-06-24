@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { toggleContact, toggleAbout, toggleHobbies, togglePortfolio } from './actions/actions.js';
+import { toggleContact, toggleAbout, toggleSkills, togglePortfolio } from './actions/actions.js';
 import Contact from './components/contact.js';
 import About from './components/about.js';
-import Hobbies from './components/hobbies.js';
+import Skills from './components/skills.js';
 import Portfolio from './components/portfolio.js';
 
 import './App.css';
 
 class App extends Component {
   render() {
-   const RENDER_LOGIC = this.props.about || this.props.contact || this.props.hobbies || this.props.portfolio;
+   const RENDER_LOGIC = this.props.about || this.props.contact || this.props.skills || this.props.portfolio;
     return (
       <div className="nav-parent">
         {/* Parent Container for all Cards */}
@@ -30,10 +30,10 @@ class App extends Component {
         { this.props.contact ? <Contact /> : null }
 
         { RENDER_LOGIC ? null :
-          <div className="nav-child" onClick={this.props.toggleHobbies}>
-            <h1> hobbies </h1>
+          <div className="nav-child" onClick={this.props.toggleSkills}>
+            <h1> skills </h1>
           </div>}
-        { this.props.hobbies ? <Hobbies /> : null }
+        { this.props.skills ? <Skills /> : null }
 
         { RENDER_LOGIC  ? null :
           <div className="nav-child" onClick={this.props.togglePortfolio}>
@@ -48,7 +48,7 @@ class App extends Component {
     return bindActionCreators({
       toggleContact: toggleContact,
       toggleAbout: toggleAbout,
-      toggleHobbies: toggleHobbies,
+      toggleSkills: toggleSkills,
       togglePortfolio: togglePortfolio,
     }, dispatch)
 };
@@ -57,7 +57,7 @@ class App extends Component {
     return {
       contact: state.toggle_contact,
       about: state.toggle_about,
-      hobbies: state.toggle_hobbies,
+      skills: state.toggle_skills,
       portfolio: state.toggle_portfolio
     }
   };

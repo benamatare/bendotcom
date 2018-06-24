@@ -1,3 +1,45 @@
-.portfolio {
-  background-color: grey;
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  /* Container */
+  .portfolio-parent {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .portfolio-child {
+    height: 33%;
+    margin: 5% 5% 0 5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    background-color: #232323;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
+  }
+  .portfolio-child a,i {
+    font-size: 23vh;
+    color: #FA0013;
+  }
+  /* Button Block */
+    .back {
+    margin: 5%;
+    height: 23%;
+
+    background-color: #232323;
+    outline: none;
+
+    color: #888888;
+    font-size: 3.2em;
+    text-transform: uppercase;
+
+    border-width: 0;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
+  }
+
 }

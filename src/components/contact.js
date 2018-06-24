@@ -6,13 +6,42 @@ import { toggleContact } from '../actions/actions.js';
 
 const Contact = props => {
   return (
-    <div className="contact">
-      <h1 className="content-header"> Contact Info </h1>
-      <h2 className="email"> ben.a.matare@gmail.com </h2>
-      <h2 className="linked-in"> linkedIn icon goes here </h2>
-      <h2 className="github"> github icon goes here </h2>
-      <h2 className="twitter"> twitter icon goes here </h2>
-      <button onClick={props.toggleContact}>asdasd</button>
+    <div className="contact-parent">
+      <div className="contact-icon-parent">
+        <div className="icon-child">
+          <a class="contact-email" href="mailto:ben.a.matare@gmail.com">
+            <i class="fas fa-inbox"></i>
+          </a>
+        </div>
+        <div className="icon-child">
+          <a download  href="../download/Ben Matare Resume.pdf" >
+            <i class="fas fa-file-download"></i>
+          </a>
+        </div>
+        <div className="icon-child">
+          <a href="https://medium.com/@ben.a.matare">
+            <i class="fab fa-medium-m"></i>
+          </a>
+        </div>
+        <div className="icon-child">
+          <a href="https://twitter.com/a_matare">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <div className="icon-child">
+          <a href="https://www.linkedin.com/in/benmatare/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        <div className="icon-child">
+          <a href="https://github.com/benamatare">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <button className="back" onClick={props.toggleContact}>
+        back
+      </button>
     </div>
 )};
 
