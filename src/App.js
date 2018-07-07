@@ -40,6 +40,7 @@ class App extends Component {
             <h1> portfolio </h1>
           </div>}
         { this.props.portfolio ? <Portfolio /> : null }
+        <span className="love"> made with a lil' react & redux for no reason </span>
       </div>
   )};
 }

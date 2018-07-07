@@ -27,10 +27,7 @@
       font-size: 3.2vh;
     }
     img {
-      margin-top: 2%;
-      border-radius: 50%;
-      max-width: 25%;
-      height: auto;
+      display: none;
     }
     /* Content Block */
     .about-content {
@@ -49,22 +46,99 @@
       font-size: 1.2em;
       list-style-type: none;
     }
+    .about-content p {
+      display: none;
+    }
     /* Button Block */
-  .back {
-    margin: 5%;
-    height: 23%;
+    .back {
+      margin: 5%;
+      height: 23%;
 
-    background-color: #232323;
-    outline: none;
+      background-color: #232323;
+      outline: none;
+
+      color: #888888;
+      font-size: 3.2em;
+      text-transform: uppercase;
+
+      border-width: 0;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                  0 10px 10px rgba(0,0,0,0.22);
+    }
+}
+
+/* Desktop Stlyes */
+@media only screen and (min-width: 961px) {
+  .about-parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+  .about-header {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .about-header h1 {
+    padding-top: 1.5%;
 
     color: #888888;
-    font-size: 3.2em;
+    font-size: 6vh;
     text-transform: uppercase;
+  }
+  .about-header p {
+    padding-top: 1.5%;
+    padding-left: 0 !important;
+    color: white;
+    font-size: 2.6em;
+  }
+  .about-header img {
+    margin-bottom: 2%;
+    width: 44%;
 
-    border-width: 0;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
                 0 10px 10px rgba(0,0,0,0.22);
   }
 
+  .about-content {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+    align-items: left;
+  }
+  .about-content li {
+    display: none;
+  }
+  .about-content p {
+    padding-left: 0 !important;
+    margin-bottom: 15px;
+    height: 100%;
+    color: #888888;
+    font-size: 1.9em;
+  }
+  .about-content mark.lightgrey {
+    color: lightgrey;
+    background: none;
+  }
+
+  /* .back { */
+    /* Meh fix for weird tall screens */
+    /* width: 9% !important;
+  } */
 
 }
+/* @media only screen and (min-width: 1702) {
+  .back{
+    box-shadow: 0 0 0 rgba(0,0,0,0.25) !important;
+  } */
+/* } */
