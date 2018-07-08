@@ -1,40 +1,37 @@
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-  /* Container */
   .contact-parent {
     height: 100vh;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
   .contact-icon-parent {
-    margin: 5% 5% 0 5%;
-    height: 80%;
+    margin: 2.5% 3% 1.5% 3%;
+    height: 90vh;
+
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 
-    background-color: #232323;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
                 0 10px 10px rgba(0,0,0,0.22);
   }
   .icon-child i {
+    margin: 0.5%;
     font-size: 19.7vh;
-    padding: 3%;
-    margin-left: .2%;
-    margin-right: .2%;
   }
-
   .icon-child:nth-child(1) i {
     /* Email */
-    padding-top: 12.2%;
-    color: #FA0013;
+    color: #ffffff;
   }
   .icon-child:nth-child(2) i {
     /* Resume */
-    padding-top: 12.2%;
-    color: #3b5998;
+    color: #888888;
   }
   .icon-child:nth-child(3) i {
     /* Medium */
@@ -52,70 +49,95 @@
     /* Github */
     color: #333;
   }
+}
 
-  /* Button Block */
-    .back {
-    margin: 5%;
-    height: 23%;
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .contact-parent {
+    height: 100vh;
 
-    background-color: #232323;
-    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .contact-icon-parent {
+    margin: 2.5% 3% 0.5% 3%;
+    height: 85vh;
 
-    color: #888888;
-    font-size: 3.2em;
-    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 
-    border-width: 0;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
                 0 10px 10px rgba(0,0,0,0.22);
+  }
+  .icon-child i {
+    margin: 0.5%;
+    font-size: 19.7vh;
+  }
+  .icon-child:nth-child(1) i {
+    /* Email */
+    color: #ffffff;
+  }
+  .icon-child:nth-child(2) i {
+    /* Resume */
+    color: #888888;
+  }
+  .icon-child:nth-child(3) i {
+    /* Medium */
+    color: #000;
+  }
+  .icon-child:nth-child(4) i {
+    /* Twitter */
+    color: #55acee;
+  }
+  .icon-child:nth-child(5) i {
+    /* LinkedIn */
+    color: #0976b4;
+  }
+  .icon-child:nth-child(6) i {
+    /* Github */
+    color: #333;
   }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .contact-parent {
-    width: 100%;
+    width: 85vw;
+    height: 85vh;
 
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-
     align-items: center;
+    align-content: center;
+    justify-content: center;
+
   }
   .contact-icon-parent {
+    margin: 2.5% 5.5% 1.5% 5.5%;
+    width: 85vw;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-    justify-content: center;
-  }
-  .icon-child {
-    margin: 3%;
-
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    align-content: center;
   }
   .icon-child i {
-    padding: 3%;
-    margin-left: 2%;
-    margin-right: 2%;
-
-    font-size: 21vh;
+    /* margin: 15%; */
+    font-size: 15vh;
   }
-
   .icon-child:nth-child(1) i {
     /* Email */
-    padding-top: 12.2%;
-    font-size: 18vh !important;
     color: #ffffff;
   }
   .icon-child:nth-child(2) i {
     /* Resume */
-    padding-top: 12.2%;
-    font-size: 18vh !important;
     color: #888888;
   }
   .icon-child:nth-child(3) i {

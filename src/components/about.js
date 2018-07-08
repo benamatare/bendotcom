@@ -10,13 +10,14 @@ const About = props => {
 
   return (
     <div className="about-parent">
-      <header className="about-header">
+      <div className="about-header">
         <h1> ben matare </h1>
         <p> full stack web developer </p>
         <img alt="profile" src={IMG}/>
-      </header>
+      </div>
       <div className="about-content">
         <ul>
+          <li> us army national guard vet </li>
           <li> dota 2 nerd </li>
           <li> front-end fiend </li>
           <li> i like react </li>

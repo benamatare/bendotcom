@@ -1,26 +1,26 @@
-a {
-  color: #232323;
-}
-
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   .portfolio-parent {
     height: 100vh;
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
     justify-content: center;
   }
   .portfolio-child {
-    height: 33%;
-    margin: 5% 5% 0 5%;
+    width: 94%;
+    margin-bottom: 3.2%;
 
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    align-content: center;
 
-    background-color: #232323;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
                 0 10px 10px rgba(0,0,0,0.22);
   }
@@ -28,157 +28,203 @@ a {
     display: none;
   }
   .portfolio-child a,i {
-    font-size: 23vh;
+    font-size: 22vh;
     color: #FA0013;
   }
-  /* Button Block */
-    .back {
-    margin: 5%;
-    height: 23%;
-
-    background-color: #232323;
-    outline: none;
-
-    color: #888888;
-    font-size: 3.2em;
-    text-transform: uppercase;
-
-    border-width: 0;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-                0 10px 10px rgba(0,0,0,0.22);
-  }
-
 }
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .portfolio-parent {
-    width: 99%;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-
     align-items: center;
+    align-content: center;
+    justify-content: center;
   }
   .portfolio-child {
-    width: 95%;
-    margin-top: 8%;
-    margin-bottom: 1%;
+    height: 25vh;
+    width: 94%;
+    margin-top: 1.6%;
+    margin-bottom: 1.6%;
 
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
     justify-content: flex-start;
     align-items: center;
 
-    box-shadow: 0 14px 28px -14px rgba(0,0,0,0.25);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
   }
   .portfolio-child h1 {
-
-    margin-top: 2%;
-    font-size: 3.2em;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
-
-  .portfolio-child p:nth-child(2) {
-    font-size: 1.4em;
-    color: #888888;
-  }
-  .portfolio-child p:nth-child(4) {
-    color: lightgrey;
-    margin-bottom: 1.2%;
-  }
-  .portfolio-child a,i {
-    font-size: 233px;
-    margin-right: 5%;
-    margin-left: 2.5%;
-  }
-  .portfolio-child i {
-    color: #FA0013;
-  }
-}
-
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-  .portfolio-parent {
-    width: 99%;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-
-    align-items: center;
-  }
-
-  .portfolio-child {
-    width: 70%;
+    /* Project Name */
     margin-top: 1%;
-    margin-bottom: 1%;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    justify-content: flex-start;
-    align-items: center;
-
-    box-shadow: 0 14px 28px -14px rgba(0,0,0,0.25);
-  }
-  .portfolio-child h1 {
-
-    margin-top: 2%;
-    font-size: 3.2em;
+    font-size: 3vh;
     color: #ffffff;
     text-transform: uppercase;
   }
-
   .portfolio-child p:nth-child(2) {
-    font-size: 1.4em;
+    /* About Project */
+    font-size: 1.7vh;
     color: #888888;
   }
   .portfolio-child p:nth-child(4) {
+    /* Technology Used */
+    font-size: 1vh;
     color: lightgrey;
     margin-bottom: 1.2%;
   }
   .portfolio-child a,i {
-    font-size: 233px;
-    margin-right: 5%;
+    /* Github & Youtube Logo */
+    font-size: 3.5vh;
+    margin-right: 2.5%;
     margin-left: 2.5%;
   }
   .portfolio-child i {
+    /* Youtube Logo */
     color: #FA0013;
+    font-size: 5.5em;
   }
 
   .child-detail {
-    /* background-color: yellow; */
     display: flex;
     flex-direction: column;
-
     align-items: flex-start;
   }
   .child-detail h1, p {
-    /* color: green; */
-    margin-left: 2%;
+    margin-left: 1%;
   }
   .child-detail a {
     display: flex;
     flex-direction: column;
   }
   .child-detail i {
-    font-size: 0.1em;
+    font-size: 4vh;
     margin-bottom: 11.5%;
   }
-  .back {
-    padding: .8%;
-    width: 8%;
-    height: 7.3% !important;
+}
 
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .portfolio-parent {
+    height: 100vh;
+    padding-bottom: 17vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .portfolio-child {
+    height: 33vh;
+    width: 98%;
+    margin-top: 1.6%;
+    margin-bottom: 1%;
+    padding-bottom: 25px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
+  }
+  .portfolio-child h1 {
+    /* Project Name */
+    margin-top: 1%;
+
+    font-size: 5vh;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .portfolio-child p:nth-child(2) {
+    /* About Project */
+    font-size: 1.8vh;
+    color: #888888;
+  }
+  .portfolio-child p:nth-child(4) {
+    /* Technology Used */
+    font-size: 2.5vh;
+    color: lightgrey;
+    margin-bottom: 1.2%;
+  }
+  .portfolio-child a,i {
+    /* Github & Youtube Logo */
+    font-size: 15vh;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+  .portfolio-child i {
+    /* Youtube Logo */
+    color: #FA0013;
+    font-size: 1.6em;
+  }
+  .child-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .child-detail h1, p {
+    margin-left: 1%;
+  }
+  .child-detail a {
+    display: flex;
+    flex-direction: column;
+  }
+  .child-detail i {
+    font-size: 6vh;
+    margin-bottom: 11.5%;
+  }
+}
+
+/* Desktop Stlyes Wide Screens */
+@media only screen and (min-width: 1441px) and (max-width: 2561px){
+  .portfolio-parent {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .portfolio-child {
+    height: 75vh;
+    width: 98%;
+    margin-top: 1.6%;
+    margin-bottom: 1%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
+  }
+  .back {
+    width: 300px;
+    height: 100px;
+    bottom: 40px;
+
+    outline: none;
+    border-width: 0;
 
     color: #888888;
-    font-size: 2vw;
+    font-size: 2.5vw;
+    text-align: center;
+    text-transform: uppercase;
 
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
   }
 }

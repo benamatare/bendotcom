@@ -1,144 +1,233 @@
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-    /* Container */
-    .about-parent {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    /* Header Block */
-    .about-header {
-      margin: 5%;
-      height: 33%;
-      background-color: #232323;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-                  0 10px 10px rgba(0,0,0,0.22);
-    }
-    .about-header h1 {
-      padding-top: 2.5%;
-
-      color: #888888;
-      font-size: 3.2em;
-      text-transform: uppercase;
-    }
-    .about-header p {
-      color: white;
-      font-size: 3.2vh;
-    }
-    img {
-      display: none;
-    }
-    /* Content Block */
-    .about-content {
-      margin: 0 5% 0 5%;
-      height: 33%;
-      background-color: #232323;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-                  0 10px 10px rgba(0,0,0,0.22);
-    }
-    .about-content li {
-      padding: 4% 0 4% 0;
-      justify-content: center;
-      text-align: center;
-
-      color: #888888;
-      font-size: 1.2em;
-      list-style-type: none;
-    }
-    .about-content p {
-      display: none;
-    }
-    /* Button Block */
-    .back {
-      margin: 5%;
-      height: 23%;
-
-      background-color: #232323;
-      outline: none;
-
-      color: #888888;
-      font-size: 3.2em;
-      text-transform: uppercase;
-
-      border-width: 0;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-                  0 10px 10px rgba(0,0,0,0.22);
-    }
-}
-
-/* Desktop Stlyes */
-@media only screen and (min-width: 961px) {
   .about-parent {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .about-header {
+    margin: 2.5% 3% 1.5% 3%;
+    height: 17vh;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-    justify-content: center;
-  }
-  .about-header {
-    width: 50%;
-
-    display: flex;
-    flex-direction: column-reverse;
-
     justify-content: center;
     align-items: center;
-  }
-  .about-header h1 {
-    padding-top: 1.5%;
-
-    color: #888888;
-    font-size: 6vh;
-    text-transform: uppercase;
-  }
-  .about-header p {
-    padding-top: 1.5%;
-    padding-left: 0 !important;
-    color: white;
-    font-size: 2.6em;
-  }
-  .about-header img {
-    margin-bottom: 2%;
-    width: 44%;
 
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
                 0 10px 10px rgba(0,0,0,0.22);
   }
-
+  .about-header h1 {
+    color: #888888;
+    font-size: 7vh;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+  .about-header p {
+    color: #ffffff;
+    font-size: 3vh;
+  }
+  .about-header img {
+    display: none;
+  }
   .about-content {
-    width: 50%;
+    margin: 2.5% 3% 1.5% 3%;
+    height: 65vh;
+    width: 94%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
+  }
+  .about-content li {
+    margin: 2.5% 0 2.5% 0;
+    padding: 1.5% 0 1.5% 0;
+    text-align: center;
+    color: #888888;
+    font-size: 4.1vh;
+    list-style-type: none;
+  }
+  .about-content p {
+    display: none;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .about-parent {
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .about-header {
+    margin: 2.5% 3% 1.5% 3%;
+    /* height: 30vh; */
+    width: 94%;
 
-    justify-content: flex-start;
-    align-items: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
+
+  }
+  .about-header h1 {
+    color: #888888;
+    height: 5vh;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+  .about-header p {
+    height: 5vh;
+    color: #ffffff;
+    font-size: 3vh;
+  }
+  .about-header img {
+    display: none;
+  }
+
+  .about-content {
+    width: 94%;
+    height: 77vh;
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
   }
   .about-content li {
     display: none;
   }
   .about-content p {
-    padding-left: 0 !important;
-    margin-bottom: 15px;
-    height: 100%;
+    margin: 1%;
+    text-align: center;
     color: #888888;
-    font-size: 1.9em;
+    font-size: 2.3vh;
   }
   .about-content mark.lightgrey {
     color: lightgrey;
     background: none;
   }
-
-  /* .back { */
-    /* Meh fix for weird tall screens */
-    /* width: 9% !important;
-  } */
-
 }
-/* @media only screen and (min-width: 1702) {
-  .back{
-    box-shadow: 0 0 0 rgba(0,0,0,0.25) !important;
-  } */
-/* } */
+
+/* Desktop Stlyes */
+@media only screen and (min-width: 961px) {
+  .about-parent {
+    width: 90vw;
+    height: 85vh;
+    padding: 1%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .about-header {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-header h1 {
+    color: #888888;
+    font-size: 6.6vh;
+    white-space: nowrap;
+    text-transform: uppercase;
+    padding-bottom: 5%;
+  }
+  .about-header p {
+    padding-top: 3.5%;
+    color: white;
+    font-size: 2.5vh;
+  }
+  .about-header img {
+    width: 42vh;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .about-content {
+    margin: 0.5% 0 0.5% 2.5%;
+    /* background-color: red; */
+    text-align: left;
+  }
+  .about-content li {
+    display: none;
+  }
+  .about-content p {
+    width: 45vw;
+
+    color: #888888;
+    font-size: 2.8vh;
+    padding-bottom: 5%;
+  }
+  .about-content mark.lightgrey {
+    color: lightgrey;
+    background: none;
+  }
+}
+/* Desktop Stlyes Wide Screens */
+@media only screen and (min-width: 1441px) and (max-width: 2561px){
+  .about-parent {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .about-header {
+    display: flex;
+    /* background-color: yellow; */
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-content {
+    margin: 0.5% 0 0.5% 2.5%;
+    /* padding: 0 40% 0 0; */
+    justify-content: center;
+    background-color: red;
+    text-align: left;
+  }
+  .back {
+    width: 300px;
+    height: 100px;
+
+    bottom: 40px;
+    position: absolute;
+    /* background-color: red; */
+
+    outline: none;
+    border-width: 0;
+
+    color: #888888;
+    font-size: 2.5vw;
+    text-align: center;
+    text-transform: uppercase;
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
+  }
+}
