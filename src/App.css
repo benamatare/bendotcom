@@ -12,9 +12,6 @@ a {
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-  body {
-    background-color: green !important;
-  }
   .love {
     display: none;
   }
