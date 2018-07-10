@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #232323; */
+  background-color: #232323;
 }
 
 a {
@@ -49,7 +49,6 @@ a {
   .back {
     margin: 2.5% 0 2.5% 0;
     width: 90%;
-    background-color: purple;
 
     outline: none;
     border-width: 0;
