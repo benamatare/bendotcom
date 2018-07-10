@@ -1,20 +1,21 @@
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   .about-parent {
-    height: 100vh;
-
     display: flex;
     flex-direction: column;
+
     align-items: center;
-    align-content: center;
+    text-align: center;
   }
+  /* Name and Title */
   .about-header {
-    margin: 2.5% 3% 1.5% 3%;
-    height: 17vh;
+    margin: 2.5% 0 2.5% 0;
+    width: 90%;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     justify-content: center;
     align-items: center;
 
@@ -23,25 +24,26 @@
   }
   .about-header h1 {
     color: #888888;
-    font-size: 7vh;
+    font-size: 3.3em;
     white-space: nowrap;
     text-transform: uppercase;
   }
   .about-header p {
     color: #ffffff;
-    font-size: 3vh;
+    font-size: 1.7em;
   }
   .about-header img {
     display: none;
   }
+  /* Details as list */
   .about-content {
-    margin: 2.5% 3% 1.5% 3%;
-    height: 65vh;
-    width: 94%;
+    margin: 2.5% 0 2.5% 0;
+    width: 90%;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     justify-content: center;
     align-items: center;
 
@@ -49,11 +51,11 @@
                 0 10px 10px rgba(0,0,0,0.22);
   }
   .about-content li {
-    margin: 2.5% 0 2.5% 0;
-    padding: 1.5% 0 1.5% 0;
+    margin: 1.5% 0 1.5% 0;
     text-align: center;
+    line-height: 1.5;
     color: #888888;
-    font-size: 4.1vh;
+    font-size: 2.2em;
     list-style-type: none;
   }
   .about-content p {

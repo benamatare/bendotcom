@@ -1,29 +1,28 @@
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   .skills-parent {
-    height: 100vh;
 
     display: flex;
     flex-direction: column;
+
     align-items: center;
-    align-content: center;
   }
   .skills-child {
-    margin: 2.5% 3% 1.5% 3%;
-    height: 90vh;
+    margin: 2.5% 0 2.5% 0;
+    width: 90%;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+
+    justify-content: space-around;
     align-items: center;
 
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
                 0 10px 10px rgba(0,0,0,0.22);
   }
   .skills-child i {
-    margin: 0.5%;
-    font-size: 13.5vh;
+    font-size: 6em;
   }
 }
 

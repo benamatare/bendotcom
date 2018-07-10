@@ -17,7 +17,7 @@ const About = props => {
       </div>
       <div className="about-content">
         <ul>
-          <li> us army national guard vet </li>
+          <li> us army vet </li>
           <li> dota 2 nerd </li>
           <li> front-end fiend </li>
           <li> i like react </li>
@@ -31,7 +31,7 @@ const About = props => {
             background in ecommerce & retail, operational knowledge of <br></br>
             amazon, ebay, walmart, shopify <br></br>
             embody a strong ethos of teamwork, passion & attention detail <br></br>
-            live the <mark class="lightgrey">"work smarter, not harder"</mark> philosophy <br></br>
+            live the <mark className="lightgrey">"work smarter, not harder"</mark> philosophy <br></br>
             <br></br>
             born in slovakia & part zimbabwean <br></br>
             passion for frontend code <br></br>
