@@ -23,7 +23,20 @@
   .skills-child i {
     font-size: 5em;
     padding: 2%;
+  }
+}
 
+/* Mobile Landscape Styles */
+@media only screen
+and (min-width: 480px)
+and (max-width: 823px)
+and (orientation: landscape) {
+  .skills-child {
+    height: 77vh !important;
+    justify-content: space-around !important;
+  }
+  .skills-child i {
+    font-size: 9.5vw !important;
   }
 }
 

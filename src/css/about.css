@@ -62,6 +62,48 @@
   }
 }
 
+/* Mobile Landscape Styles */
+@media only screen
+and (min-width: 480px)
+and (max-width: 823px)
+and (orientation: landscape) {
+  .about-parent {
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center!important;
+    text-align: center!important;
+  }
+  .about-header {
+    margin: 1.5% 0 1.5% 0 !important;
+    width: 60vw !important;
+  }
+  .about-header {
+    font-size: 4.5vh;
+  }
+  .about-content {
+    width: 60vw !important;
+    margin: 2.5% 0 2.5% 0 !important;
+
+  }
+  .about-content p {
+    display: none !important;
+  }
+  .about-content li {
+    display: inherit !important;
+    margin: 1.5% 0 1.5% 0 !important;
+    text-align: center !important;
+    line-height: 1.3 !important;
+    color: #888888 !important;
+    font-size: 6vh !important;
+    list-style-type: none !important;
+  }
+  .about-parent button {
+    width: 100% !important;
+
+  }
+}
+
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .about-parent {

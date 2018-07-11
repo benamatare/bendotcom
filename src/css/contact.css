@@ -1,3 +1,27 @@
+.icon-child:nth-child(1) i {
+  /* Email */
+  color: #ffffff;
+}
+.icon-child:nth-child(2) i {
+  /* Resume */
+  color: #888888;
+}
+.icon-child:nth-child(3) i {
+  /* Medium */
+  color: #000;
+}
+.icon-child:nth-child(4) i {
+  /* Twitter */
+  color: #55acee;
+}
+.icon-child:nth-child(5) i {
+  /* LinkedIn */
+  color: #0976b4;
+}
+.icon-child:nth-child(6) i {
+  /* Github */
+  color: #333;
+}
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   .contact-parent {
@@ -24,29 +48,18 @@
   .icon-child i {
     font-size: 7.2em;
   }
-  .icon-child:nth-child(1) i {
-    /* Email */
-    color: #ffffff;
+}
+
+/* Mobile Landscape Styles */
+@media only screen
+and (min-width: 480px)
+and (max-width: 823px)
+and (orientation: landscape) {
+  .contact-icon-parent {
+    height: 80vh !important;
   }
-  .icon-child:nth-child(2) i {
-    /* Resume */
-    color: #888888;
-  }
-  .icon-child:nth-child(3) i {
-    /* Medium */
-    color: #000;
-  }
-  .icon-child:nth-child(4) i {
-    /* Twitter */
-    color: #55acee;
-  }
-  .icon-child:nth-child(5) i {
-    /* LinkedIn */
-    color: #0976b4;
-  }
-  .icon-child:nth-child(6) i {
-    /* Github */
-    color: #333;
+  .icon-child i {
+    font-size: 13vw !important;
   }
 }
 
@@ -75,30 +88,6 @@
   }
   .icon-child i {
     font-size: 9.7em;
-  }
-  .icon-child:nth-child(1) i {
-    /* Email */
-    color: #ffffff;
-  }
-  .icon-child:nth-child(2) i {
-    /* Resume */
-    color: #888888;
-  }
-  .icon-child:nth-child(3) i {
-    /* Medium */
-    color: #000;
-  }
-  .icon-child:nth-child(4) i {
-    /* Twitter */
-    color: #55acee;
-  }
-  .icon-child:nth-child(5) i {
-    /* LinkedIn */
-    color: #0976b4;
-  }
-  .icon-child:nth-child(6) i {
-    /* Github */
-    color: #333;
   }
 }
 
@@ -132,37 +121,8 @@
     font-size: 24vh;
     padding: 1%;
   }
-  .icon-child:nth-child(1) i {
-    padding: 5%;
-    /* Email */
-    color: #ffffff;
-  }
-  .icon-child:nth-child(2) i {
-    /* Resume */
-    padding: 5%;
-    color: #888888;
-  }
-  .icon-child:nth-child(3) i {
-    /* Medium */
-    padding: 5%;
-    color: #000;
-  }
-  .icon-child:nth-child(4) i {
-    /* Twitter */
-    padding: 5%;
-    color: #55acee;
-  }
-  .icon-child:nth-child(5) i {
-    /* LinkedIn */
-    padding: 5%;
-    color: #0976b4;
-  }
-  .icon-child:nth-child(6) i {
-    /* Github */
-    padding: 5%;
-    color: #333;
-  }
 }
+
 /* Ultrawide Desktop Stlyes */
 @media only screen and (min-width: 2560px) {
   .icon-child i {

@@ -3,14 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #232323;
+  background-color: #232323 !important;
  }
 
 a {
   text-decoration: none;
 }
-
-/* Mobile Styles */
+/* Mobile Portrait Styles */
 @media only screen
 and (max-width: 400px) {
   body {
@@ -62,6 +61,34 @@ and (max-width: 400px) {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
                 0 10px 10px rgba(0,0,0,0.22);
   }
+}
+
+/* Mobile Landscape Styles */
+@media only screen
+and (min-width: 480px)
+and (max-width: 823px)
+and (orientation: landscape) {
+   body {
+     background-color: lightgrey;
+   }
+   .nav-parent {
+     height: auto !important;
+     flex-direction: row !important;
+     flex-wrap: wrap !important;
+   }
+   .nav-child {
+     margin: 0.9% !important;
+     height: 46vh !important;
+     width: 47vw !important;
+   }
+   .nav-child h1 {
+     font-size: 3em !important;
+   }
+   .back {
+     width: 90% !important;
+
+     font-size: 2em !important;
+   }
 }
 
 /* Tablet Styles */
