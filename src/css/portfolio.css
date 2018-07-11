@@ -10,6 +10,7 @@
   }
   .portfolio-child {
     margin: 2.5% 0 2.5% 0;
+    padding-bottom: 5%;
     width: 90%;
 
     display: flex;
@@ -17,6 +18,7 @@
     flex-wrap: wrap;
 
     justify-content: center;
+    align-items: center;
 
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
                 0 10px 10px rgba(0,0,0,0.22);
@@ -32,25 +34,21 @@
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .portfolio-parent {
-    height: 100vh;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+
     align-items: center;
-    align-content: center;
-    justify-content: center;
+
   }
   .portfolio-child {
-    height: 25vh;
-    width: 94%;
-    margin-top: 1.6%;
-    margin-bottom: 1.6%;
+    margin: 2.5% 0 2.5% 0;
+    width: 90%;
 
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+
     align-items: center;
 
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
@@ -58,170 +56,121 @@
   }
   .portfolio-child h1 {
     /* Project Name */
-    margin-top: 1%;
-    font-size: 3vh;
+    font-size: 1.5em;
     color: #ffffff;
     text-transform: uppercase;
   }
   .portfolio-child p:nth-child(2) {
     /* About Project */
-    font-size: 1.7vh;
+    font-size: 0.7em;
     color: #888888;
   }
   .portfolio-child p:nth-child(4) {
     /* Technology Used */
-    font-size: 1vh;
+    font-size: 0.9em;
     color: lightgrey;
-    margin-bottom: 1.2%;
   }
   .portfolio-child a,i {
     /* Github & Youtube Logo */
-    font-size: 3.5vh;
-    margin-right: 2.5%;
-    margin-left: 2.5%;
+    font-size: 1.45em;
   }
   .portfolio-child i {
     /* Youtube Logo */
     color: #FA0013;
-    font-size: 5.5em;
+    margin: 0 0 0 1.5%;
+    font-size: 5.3em;
   }
-
   .child-detail {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
   }
   .child-detail h1, p {
-    margin-left: 1%;
-  }
-  .child-detail a {
-    display: flex;
-    flex-direction: column;
+    margin: 2.5%;
   }
   .child-detail i {
-    font-size: 4vh;
-    margin-bottom: 11.5%;
+    font-size: 1em;
+    /* display: none; */
   }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .portfolio-parent {
-    height: 100vh;
-    padding-bottom: 17vh;
+    padding-top: 5%;
+    width: 100%;
+
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+
     align-items: center;
-    align-content: center;
-    justify-content: center;
+  }
+  .portfolio-parent button {
+    position: relative;
   }
 
   .portfolio-child {
-    height: 33vh;
-    width: 98%;
-    margin-top: 1.6%;
-    margin-bottom: 1%;
-    padding-bottom: 25px;
+    margin: 0.5% 0 0.5% 0;
+    width: 70%;
 
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+
     justify-content: flex-start;
     align-items: center;
 
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
                 0 10px 10px rgba(0,0,0,0.22);
   }
-  .portfolio-child h1 {
-    /* Project Name */
-    margin-top: 1%;
-
-    font-size: 5vh;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
-  .portfolio-child p:nth-child(2) {
-    /* About Project */
-    font-size: 1.8vh;
-    color: #888888;
-  }
-  .portfolio-child p:nth-child(4) {
-    /* Technology Used */
-    font-size: 2.5vh;
-    color: lightgrey;
-    margin-bottom: 1.2%;
-  }
   .portfolio-child a,i {
-    /* Github & Youtube Logo */
-    font-size: 15vh;
-    margin-right: 2.5%;
-    margin-left: 2.5%;
-  }
-  .portfolio-child i {
-    /* Youtube Logo */
+    margin-left: 1%;
+    font-size: 4em;
     color: #FA0013;
-    font-size: 1.6em;
   }
   .child-detail {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
   }
-  .child-detail h1, p {
-    margin-left: 1%;
+  .child-detail h1 {
+    padding-left: 2%;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 4em;
   }
-  .child-detail a {
-    display: flex;
-    flex-direction: column;
+  .child-detail p {
+    padding-left: 2%;
+    width: 75%;
+    color: #888888;
+    font-size: 1.3em;
+  }
+  .child-detail mark.lightgrey {
+    color: #888888;
+    background: none;
+    font-size: 1.4em;
   }
   .child-detail i {
-    font-size: 6vh;
-    margin-bottom: 11.5%;
+    font-size: 0.7em;
   }
 }
 
-/* Desktop Stlyes Wide Screens */
-@media only screen and (min-width: 1441px) and (max-width: 2561px){
-  .portfolio-parent {
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+/* Ultrawide Desktop Stlyes */
+@media only screen and (min-width: 2560px) {
+  .portfolio-child a,i {
+    font-size: 5em;
   }
-
-  .portfolio-child {
-    height: 75vh;
-    width: 98%;
-    margin-top: 1.6%;
-    margin-bottom: 1%;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-                0 10px 10px rgba(0,0,0,0.22);
+  .child-detail h1 {
+    font-size: 8em;
   }
-  .back {
-    width: 300px;
-    height: 100px;
-    bottom: 40px;
-
-    outline: none;
-    border-width: 0;
-
-    color: #888888;
-    font-size: 2.5vw;
-    text-align: center;
-    text-transform: uppercase;
-
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-                0 10px 10px rgba(0,0,0,0.22);
+  .child-detail p {
+    width: 100%;
+    font-size: 1.9em;
+  }
+  .child-detail mark.lightgrey {
+    font-size: 1.6em;
+  }
+  .child-detail i {
+    font-size: 1em;
   }
 }

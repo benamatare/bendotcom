@@ -15,7 +15,7 @@ const Portfolio = props => {
         <div className="child-detail">
           <h1> statdota </h1>
           <p> a platform for Dota 2 enthusiasts can go to view their recent match performance, some stats on their hero usage and a couple of charts of data </p><br></br>
-          <p> react | redux | chartjs | material ui | custom css </p>
+          <p> <mark className="lightgrey">react | redux | chartjs | material ui | custom css </mark></p>
           <a alt="repo-link" href="https://github.com/benamatare/statdota">
             <i class="devicon-github-plain colored"></i>
           </a>
@@ -29,7 +29,7 @@ const Portfolio = props => {
         <div className="child-detail">
           <h1> moodify </h1>
           <p> a playlist generating web app, in which users can create playlists and apply a mood to songs, and subsequently the playlist. users are able to search for other user's playlist </p><br></br>
-          <p> ruby on rails | bcrypt | javascript | youtube api | semantic ui | custom css </p>
+          <p> <mark className="lightgrey">ruby on rails | bcrypt | javascript | youtube api | semantic ui | custom css </mark></p>
           <a alt="repo-link" href="https://github.com/benamatare/moodify">
             <i class="devicon-github-plain colored"></i>
           </a>
@@ -43,7 +43,7 @@ const Portfolio = props => {
         <div className="child-detail">
           <h1> wantr </h1>
           <p> a lifestyle activity dashboard that allows users to establish goals with steps, then track the completion of goals and steps</p><br></br>
-          <p> ruby on rails | jquery | javascript | chartjs | semantic ui | custom css </p>
+          <p> <mark className="lightgrey">ruby on rails | jquery | javascript | chartjs | semantic ui | custom css </mark></p>
           <a alt="repo-link" href="https://github.com/benamatare/wantr_front">
             <i class="devicon-github-plain colored"></i>
           </a>

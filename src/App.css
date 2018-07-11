@@ -1,17 +1,21 @@
 /* Default */
-* {
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #232323;
-}
+ }
 
 a {
   text-decoration: none;
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
+@media only screen
+and (max-width: 400px) {
+  body {
+    background-color: #232323;
+  }
   .love {
     display: none;
   }
@@ -26,7 +30,56 @@ a {
   }
   .nav-child {
     margin: 2.5% 0 2.5% 0;
-    /* margin: 5%; */
+    height: 21.5%;
+    width: 90%;
+
+    display: flex;
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
+  }
+  .nav-child h1 {
+    color: #888888;
+    font-size: 3.2em;
+    text-transform: uppercase;
+  }
+  .back {
+    margin: 2.5% 0 2.5% 0;
+    width: 90%;
+
+    outline: none;
+    border-width: 0;
+
+    color: #888888;
+    font-size: 4em;
+    text-align: center;
+    text-transform: uppercase;
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
+  }
+}
+
+/* Tablet Styles */
+ @media only screen and (min-width: 401px) and (max-width: 960px) {
+  .love {
+    display: none;
+  }
+  .nav-parent {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-child {
+    margin: 2.5% 0 2.5% 0;
     height: 21.5%;
     width: 90%;
 
@@ -43,7 +96,7 @@ a {
   }
   .nav-child h1 {
     color: #888888;
-    font-size: 14.5vw;
+    font-size: 4em;
     text-transform: uppercase;
   }
   .back {
@@ -54,66 +107,7 @@ a {
     border-width: 0;
 
     color: #888888;
-    font-size: 14.5vw;
-    text-align: center;
-    text-transform: uppercase;
-
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-                0 10px 10px rgba(0,0,0,0.22);
-  }
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    background-color: yellow !important;
-  }
-  .love {
-    display: none;
-  }
-  .nav-parent {
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-  }
-  .nav-child {
-    margin: 4% 5% 4% 5%;
-    height: 28%;
-    width: 90%;
-
-    background-color: #232323;
-
-    display: flex;
-
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-                0 10px 10px rgba(0,0,0,0.22);
-  }
-  .nav-child h1 {
-    color: #888888;
-    font-size: 14.5vw;
-    text-transform: uppercase;
-  }
-  .back {
-    margin-top: 1.5%;
-    width: 94%;
-    height: auto;
-
-    background-color: #232323;
-
-    outline: none;
-    border-width: 0;
-
-    color: #888888;
-    font-size: 10.5vw;
+    font-size: 4em;
     text-align: center;
     text-transform: uppercase;
 
@@ -124,34 +118,27 @@ a {
 
 /* Desktop Stlyes */
 @media only screen and (min-width: 961px) {
-  body {
-    background-color: red !important;
-  }
   .love {
     position: fixed;
     right: 5px;
     bottom: 5px;
 
     color: #888888;
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
   .nav-parent {
-    height: 100vh;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
-    align-items: center;
     align-content: center;
+    align-items: center;
     justify-content: center;
   }
   .nav-child {
     margin: 1%;
-    height: 45vh;
-    width: 45vw;
-
-    background-color: #232323;
+    height: 46vh;
+    width: 47vw;
 
     display: flex;
 
@@ -164,21 +151,33 @@ a {
   }
   .nav-child h1 {
     color: #888888;
-    font-size: 7vw;
+    font-size: 5.7em;
     text-transform: uppercase;
   }
   .back {
-    width: 300px;
-    height: 100px;
+    margin: 2.5% 0 2.5% 0;
+    width: 25%;
 
     outline: none;
     border-width: 0;
 
     color: #888888;
-    font-size: 2.5vw;
+    font-size: 4em;
     text-align: center;
     text-transform: uppercase;
 
     box-shadow: 0 22px 44px rgba(0,0,0,0.25);
+  }
+}
+
+/* Ultrawide Desktop Stlyes */
+@media only screen and (min-width: 2560px) {
+  .nav-child h1 {
+    color: #888888;
+    font-size: 12em;
+    text-transform: uppercase;
+  }
+  .back {
+    font-size: 8em;
   }
 }
