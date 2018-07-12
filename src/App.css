@@ -85,7 +85,6 @@ and (orientation: landscape) {
    .nav-parent {
      flex-direction: row !important;
      flex-wrap: wrap !important;
-
      align-content: center !important;
      align-items: center !important;
      justify-content: center !important;
@@ -111,7 +110,7 @@ and (orientation: landscape) {
     display: none;
   }
   .nav-parent {
-    height: 100vh;
+    background-color: red !important;
 
     display: flex;
     flex-direction: row;
@@ -123,8 +122,8 @@ and (orientation: landscape) {
   }
   .nav-child {
     margin: 1%;
-    height: 47%;
-    width: 47%;
+    height: 47vh;
+    width: 47vw;
 
     display: flex;
 
@@ -137,7 +136,7 @@ and (orientation: landscape) {
   }
   .nav-child h1 {
     color: #888888;
-    font-size: 6vh;
+    font-size: 8vw;
     text-transform: uppercase;
   }
   .back {
@@ -167,7 +166,6 @@ and (orientation: landscape) {
     font-size: 0.6em;
   }
   .nav-parent {
-    height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -178,8 +176,8 @@ and (orientation: landscape) {
   }
   .nav-child {
     margin: 1%;
-    height: 47%;
-    width: 47%;
+    height: 45vh;
+    width: 45vw;
 
     display: flex;
 
@@ -192,7 +190,7 @@ and (orientation: landscape) {
   }
   .nav-child h1 {
     color: #888888;
-    font-size: 5.4em;
+    font-size: 8vw;
     text-transform: uppercase;
   }
   .back {
