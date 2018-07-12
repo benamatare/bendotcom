@@ -68,92 +68,103 @@ and (min-width: 480px)
 and (max-width: 823px)
 and (orientation: landscape) {
   .about-parent {
-    display: flex !important;
+    /* padding-top: 1.5% !important; */
+
     flex-direction: column !important;
+    /* justify-content: baseline !important; */
 
-    align-items: center!important;
-    text-align: center!important;
+    align-items: center !important;
+    text-align: center !important;
   }
+  /* Name and Title */
   .about-header {
-    margin: 1.5% 0 1.5% 0 !important;
-    width: 60vw !important;
+    width: 90% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22) !important;
+
   }
-  .about-header {
-    font-size: 4.5vh;
+  .about-header img {
+    display: none !important;
   }
+  .about-header h1 {
+    font-size: 5vw !important;
+  }
+  .about-header p {
+    font-size: 3.5vw !important;
+  }
+  /* Details as list */
   .about-content {
-    width: 60vw !important;
-    margin: 2.5% 0 2.5% 0 !important;
-
+    width: 90% !important;
+    margin: 0 !important;
+    padding: 0.5% !important;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22) !important;
   }
   .about-content p {
     display: none !important;
   }
   .about-content li {
     display: inherit !important;
-    margin: 1.5% 0 1.5% 0 !important;
+    margin: 0 !important;
     text-align: center !important;
-    line-height: 1.3 !important;
+    line-height: 1.4 !important;
     color: #888888 !important;
-    font-size: 6vh !important;
+    font-size: 7vh !important;
     list-style-type: none !important;
-  }
-  .about-parent button {
-    width: 100% !important;
-
   }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .about-parent {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
 
-    align-items: center;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
   }
   /* Name and Title */
   .about-header {
-    margin: 2.5% 0 2.5% 0;
-    width: 90%;
-
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
 
     justify-content: center;
     align-items: center;
-
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-                0 10px 10px rgba(0,0,0,0.22);
-
   }
   .about-header h1 {
     color: #888888;
-    font-size: 3.3em;
+    font-size: 2.5em;
     white-space: nowrap;
     text-transform: uppercase;
   }
   .about-header p {
+    margin-top: 3%;
+
     color: #ffffff;
-    font-size: 1.7em;
+    font-size: 1.3em;
   }
   .about-header img {
-    display: none;
+    width: 65%;
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
   }
   /* Details as list */
   .about-content {
+    margin-top: 0.5%;
     width: 90%;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
     justify-content: center;
     align-items: center;
-
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-                0 10px 10px rgba(0,0,0,0.22);
   }
   .about-content li {
     display: none;
@@ -161,7 +172,7 @@ and (orientation: landscape) {
   .about-content p {
     text-align: center;
     color: #888888;
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .about-content mark.lightgrey {
     color: lightgrey;
@@ -184,6 +195,7 @@ and (orientation: landscape) {
   .about-parent button {
     position: relative;
   }
+  /* Name and Title */
   .about-header {
     display: flex;
     flex-direction: column-reverse;
@@ -210,6 +222,7 @@ and (orientation: landscape) {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
                 0 10px 10px rgba(0,0,0,0.22);
   }
+  /* Details as list */
   .about-content {
     margin: 2.5% 0 2.5% 2.5%;;
     width: 55%;

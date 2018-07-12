@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 5%;
 
     justify-content: space-around;
     align-items: center;
@@ -31,30 +32,35 @@
 and (min-width: 480px)
 and (max-width: 823px)
 and (orientation: landscape) {
+  .skills-parent {
+      width: auto !important;
+  }
   .skills-child {
-    height: 77vh !important;
-    justify-content: space-around !important;
+    margin: 0 !important;
+    padding: 0.5% !important;
   }
   .skills-child i {
-    font-size: 9.5vw !important;
+    font-size: 20vh !important;
+    padding: 1% !important;
   }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .skills-parent {
+    width: 100%;
     display: flex;
     flex-direction: column;
 
     align-items: center;
   }
   .skills-child {
-    margin: 2.5% 0 2.5% 0;
     width: 90%;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 3%;
 
     justify-content: space-around;
     align-items: center;
@@ -63,7 +69,7 @@ and (orientation: landscape) {
                 0 10px 10px rgba(0,0,0,0.22);
   }
   .skills-child i {
-    font-size: 5.4em;
+    font-size: 11em;
     padding: 2%;
   }
 }
@@ -86,6 +92,7 @@ and (orientation: landscape) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 5%;
 
     justify-content: space-around;
     align-items: center;
@@ -94,7 +101,7 @@ and (orientation: landscape) {
                 0 10px 10px rgba(0,0,0,0.22);
   }
   .skills-child i {
-    font-size: 20vh;
+    font-size: 18vh;
     padding: 0.1%;
   }
 }

@@ -56,10 +56,13 @@ and (min-width: 480px)
 and (max-width: 823px)
 and (orientation: landscape) {
   .contact-icon-parent {
-    height: 80vh !important;
+    margin: 0 !important;
+    padding: 1% !important;
+
   }
   .icon-child i {
-    font-size: 13vw !important;
+    font-size: 30vh !important;
+    padding: 5% !important;
   }
 }
 
@@ -72,7 +75,6 @@ and (orientation: landscape) {
     align-items: center;
   }
   .contact-icon-parent {
-    margin: 2.5% 0 2.5% 0;
     width: 90%;
 
     display: flex;
@@ -87,7 +89,7 @@ and (orientation: landscape) {
                 0 10px 10px rgba(0,0,0,0.22);
   }
   .icon-child i {
-    font-size: 9.7em;
+    font-size: 16em;
   }
 }
 
@@ -110,6 +112,7 @@ and (orientation: landscape) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 5%;
 
     justify-content: space-around;
     align-items: center;
