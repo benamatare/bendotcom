@@ -62,7 +62,7 @@ and (orientation: landscape) {
     align-items: center;
   }
   .portfolio-child {
-    margin-top: 0.5%;
+    margin-top: 2.5%;
     width: 90%;
 
     display: flex;
