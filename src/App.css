@@ -161,6 +161,7 @@ and (orientation: landscape) {
     position: fixed;
     right: 5px;
     bottom: 5px;
+    opacity: 0.5;
 
     color: #888888;
     font-size: 0.6em;
