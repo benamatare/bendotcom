@@ -1,6 +1,6 @@
 {
-  "name": "bendotcom",
-  "homepage": "http://benamatare.github.io/bendotcom",
+  "name": "matare",
+  "homepage": "http://benamatare.github.io/matare",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
