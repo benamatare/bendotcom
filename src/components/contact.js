@@ -14,7 +14,7 @@ const Contact = props => {
           </a>
         </div>
         <div className="icon-child">
-          <a href="https://learn.co/benamatare/resume" >
+          <a href="https://learn.co/benamatare/resume">
             <i class="fas fa-file-download"></i>
           </a>
         </div>
