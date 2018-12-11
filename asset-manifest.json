@@ -1,7 +1,14 @@
 {
-  "main.css": "static/css/main.c29a9d1c.css",
-  "main.css.map": "static/css/main.c29a9d1c.css.map",
-  "main.js": "static/js/main.827e5d06.js",
-  "main.js.map": "static/js/main.827e5d06.js.map",
-  "static/media/profile_desktop.png": "static/media/profile_desktop.e14294d5.png"
+  "main.css": "matare.info/static/css/main.b712e116.chunk.css",
+  "main.js": "matare.info/static/js/main.ed1bfd53.chunk.js",
+  "main.js.map": "matare.info/static/js/main.ed1bfd53.chunk.js.map",
+  "static/js/1.ee1301ba.chunk.js": "matare.info/static/js/1.ee1301ba.chunk.js",
+  "static/js/1.ee1301ba.chunk.js.map": "matare.info/static/js/1.ee1301ba.chunk.js.map",
+  "runtime~main.js": "matare.info/static/js/runtime~main.a8268a4a.js",
+  "runtime~main.js.map": "matare.info/static/js/runtime~main.a8268a4a.js.map",
+  "static/media/profile_desktop.png": "matare.info/static/media/profile_desktop.e14294d5.png",
+  "static/css/main.b712e116.chunk.css.map": "matare.info/static/css/main.b712e116.chunk.css.map",
+  "index.html": "matare.info/index.html",
+  "precache-manifest.fbdc0329aa908d46328fea0c035a9733.js": "matare.info/precache-manifest.fbdc0329aa908d46328fea0c035a9733.js",
+  "service-worker.js": "matare.info/service-worker.js"
 }
