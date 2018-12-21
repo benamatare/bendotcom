@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "ed1bfd538a43ef8192e5",
-    "url": "matare.info/static/css/main.b712e116.chunk.css"
+    "revision": "cf6e9a69f3643a2cdfa8",
+    "url": "matare.info/static/css/main.99175f5b.chunk.css"
   },
   {
-    "revision": "ed1bfd538a43ef8192e5",
-    "url": "matare.info/static/js/main.ed1bfd53.chunk.js"
+    "revision": "cf6e9a69f3643a2cdfa8",
+    "url": "matare.info/static/js/main.cf6e9a69.chunk.js"
   },
   {
     "revision": "ee1301ba92872effb54d",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "matare.info/static/media/profile_desktop.e14294d5.png"
   },
   {
-    "revision": "f95e87554001787f16ad64377293591e",
+    "revision": "7252ae2181266dd5e1842bce13f2d30e",
     "url": "matare.info/index.html"
   }
 ];

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "matare.info/precache-manifest.fbdc0329aa908d46328fea0c035a9733.js"
+  "matare.info/precache-manifest.f712d6aaf2b26b1b9f02243d7cdc79ae.js"
 );
 
 workbox.clientsClaim();
