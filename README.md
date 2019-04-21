@@ -14,5 +14,4 @@ Light Theme & Dark Theme(default)
 
 Thanks Flatiron School !
 
-https://benamatare.github.io/matare/
 
